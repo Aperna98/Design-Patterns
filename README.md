@@ -97,7 +97,8 @@ It shows how we can dynamically add features (GPU, SSD, RGB Lights, Cooling Syst
 - **Components (Classes):** Concrete decorators (`GPU`, `SSD`, `RGBLights`, `CoolingSystem`) that add features and update cost.  
 - **Main (Class):** Menu-driven interface to build a PC configuration dynamically.  
 
-![WhatsApp Image 2025-10-02 at 01 18 02_96078579](https://github.com/user-attachments/assets/d6bd5dd9-e5a9-41c6-a83e-4aecd1e8bfee)
+<img width="713" height="803" alt="image" src="https://github.com/user-attachments/assets/12a9c339-ee46-48f8-84de-89f13b0ca2f9" />
+
 
 ---
 
