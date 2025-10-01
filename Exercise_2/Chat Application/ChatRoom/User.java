@@ -15,8 +15,8 @@ public class User implements Observer {
         return name;
     }
 
-    public void sendPrivateMessage(User to, String msg) {
-        to.privateMsgs.add(this.name + " -> " + msg);
+    public void receivePrivate(String msg) {
+        privateMsgs.add(msg);
     }
 
     public void showPrivateMessages() {
