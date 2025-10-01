@@ -16,6 +16,7 @@ The design shows how commands can be encapsulated as objects, making it easy to 
 - **CommandInvoker (Class):** Executes commands, keeps undo/redo stacks, and records history.  
 - **Main (Class):** Handles user input and console UI.
 
+
 ![WhatsApp Image 2025-10-02 at 00 56 13_73d36d38](https://github.com/user-attachments/assets/62b23540-ac24-4057-962b-66b64a31bdf0)
 
 ---
@@ -30,6 +31,7 @@ It shows how an object (Influencer) can notify its followers automatically when 
 - **Influencer (Class):** Maintains a set of followers and notifies them whenever a new post is made.  
 - **SocialPlatform (Class):** Manages influencers, followers, follow relationships, and posting.  
 - **Main (Class):** Entry point to demonstrate the notification flow.  
+
 
 ![WhatsApp Image 2025-10-02 at 01 01 17_76fe1f7b](https://github.com/user-attachments/assets/74b1bef5-f966-418e-8d24-542c548a9dd6)
 
@@ -49,6 +51,7 @@ Add, update, remove players and display the leaderboard while guaranteeing a sin
 - **Player (Class):** Represents a player with ID, name, and score.  
 - **Main (Class):** Provides CLI for add, update, remove, show operations.  
 
+
 ![WhatsApp Image 2025-10-02 at 01 07 05_26fae85f](https://github.com/user-attachments/assets/95c0dcae-9cb7-45c1-98ef-d30031a64796)
 
 ---
@@ -64,6 +67,7 @@ Users can customize a pizza by selecting valid options for sauce, topping, chees
 - **Pizza (Class):** Immutable pizza object with final fields.  
 - **PizzaBuilder (Class):** Provides a fluent interface for setting properties and building pizza. Includes validation for valid options.  
 - **Main (Class):** Handles user input, validates numeric selections, and demonstrates pizza building.  
+
 
 ![WhatsApp Image 2025-10-02 at 01 09 12_c3fd5e99](https://github.com/user-attachments/assets/b7e0cb1a-777c-4ac1-9059-aac4673f36f5)
 
@@ -82,6 +86,7 @@ A proxy object (`FirewallProxy`) controls access to a real object (`Server`) by 
 - **User (Class):** Represents a user attempting to access the server.  
 - **Main (Class):** Menu-driven program for adding/removing users, accessing server, and listing authorized users.  
 
+
 ![WhatsApp Image 2025-10-02 at 01 15 59_9d5a9159](https://github.com/user-attachments/assets/f915beb5-67e5-42ed-a8dd-c977c663b746)
 
 ---
@@ -96,6 +101,7 @@ It shows how we can dynamically add features (GPU, SSD, RGB Lights, Cooling Syst
 - **PCDecorator (Abstract Class):** Wraps a PC object, serving as a base for all decorators.  
 - **Components (Classes):** Concrete decorators (`GPU`, `SSD`, `RGBLights`, `CoolingSystem`) that add features and update cost.  
 - **Main (Class):** Menu-driven interface to build a PC configuration dynamically.  
+
 
 <img width="713" height="803" alt="image" src="https://github.com/user-attachments/assets/12a9c339-ee46-48f8-84de-89f13b0ca2f9" />
 
@@ -143,6 +149,8 @@ This Java project demonstrates a real-time chat system using **Observer, Singlet
 Clone this repository:
 
 git clone https://github.com/Aperna98/Educational-Initiatives-Project.git
+
+For each project, navigate to the respective folder using cd command and compile the files by using the following commands to execute the project.
 
 javac *.java
 
