@@ -142,7 +142,9 @@ This Java project demonstrates a real-time chat system using **Observer, Singlet
 Clone this repository:
 
 git clone https://github.com/Aperna98/Educational-Initiatives-Project.git
+
 javac *.java
+
 java Main
 
 
