@@ -1,7 +1,5 @@
 import java.util.*;
 
-import ChatRoom.User;
-
 public class Main {
     private final Scanner sc = new Scanner(System.in);
     private final Map<String, FirewallProxy> servers = new HashMap<>();
