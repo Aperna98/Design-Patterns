@@ -69,7 +69,8 @@ Users can customize a pizza by selecting valid options for sauce, topping, chees
 - **Main (Class):** Handles user input, validates numeric selections, and demonstrates pizza building.  
 
 
-![WhatsApp Image 2025-10-02 at 01 09 12_c3fd5e99](https://github.com/user-attachments/assets/b7e0cb1a-777c-4ac1-9059-aac4673f36f5)
+<img width="1054" height="481" alt="image" src="https://github.com/user-attachments/assets/c39b583c-993a-4c41-905c-05fc25f59061" />
+
 
 ---
 
