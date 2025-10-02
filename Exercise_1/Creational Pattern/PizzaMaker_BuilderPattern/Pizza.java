@@ -5,7 +5,7 @@ public class Pizza {
     private final String crust;
     private final String size;
 
-    public Pizza(PizzaBuilder b) {
+    Pizza(PizzaBuilder b) {
         this.sauce = b.sauce;
         this.topping = b.topping;
         this.cheese = b.cheese;

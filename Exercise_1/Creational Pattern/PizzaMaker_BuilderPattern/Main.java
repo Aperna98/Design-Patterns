@@ -1,49 +1,54 @@
 import java.util.*;
 
 public class Main {
-
-    private static String getValidChoice(Scanner sc, String choice, List<String> options) {
-        while (true) {
-            System.out.print(choice + " " + list(options) + ": ");
-            String input = sc.nextLine().trim();
-            System.out.println();
-
-            try {
-                int ch = Integer.parseInt(input);
-                if (ch >= 1 && ch <= options.size()) {
-                    return options.get(ch - 1);
-                }
-            } catch (NumberFormatException e) {
-            }
-            System.out.println("Invalid choice! Enter a number between 1 and " + options.size() + ".\n");
-        }
-    }
-
-    private static String list(List<String> options) {
-        StringBuilder sb = new StringBuilder("[");
-        for (int i = 0; i < options.size(); i++) {
-            sb.append(i + 1).append(". ").append(options.get(i));
-            if (i < options.size() - 1)
-                sb.append(", ");
-        }
-        sb.append("]");
-        return sb.toString();
-    }
-
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        List<String> sauces = List.of("Marinara", "White", "BBQ", "Pesto");
-        List<String> toppings = List.of("Veggies", "Pepperoni", "Chicken", "Corn");
-        List<String> cheeses = List.of("Mozzarella", "Cheddar", "Parmesan");
-        List<String> crusts = List.of("Thin", "Thick", "Stuffed");
-        List<String> sizes = List.of("Small", "Medium", "Large");
+        String[] sauces = { "Marinara", "White", "BBQ", "Pesto" };
+        String[] toppings = { "Veggies", "Pepperoni", "Chicken", "Corn" };
+        String[] cheeses = { "Mozzarella", "Cheddar", "Parmesan" };
+        String[] crusts = { "Thin", "Thick", "Stuffed" };
+        String[] sizes = { "Small", "Medium", "Large" };
 
-        String sauce = getValidChoice(sc, "Sauce", sauces);
-        String topping = getValidChoice(sc, "Topping", toppings);
-        String cheese = getValidChoice(sc, "Cheese", cheeses);
-        String crust = getValidChoice(sc, "Crust", crusts);
-        String size = getValidChoice(sc, "Size", sizes);
+        System.out.print("Sauce [1.Marinara 2.White 3.BBQ 4.Pesto]: ");
+        int sauceChoice = sc.nextInt();
+        while (sauceChoice < 1 || sauceChoice > sauces.length) {
+            System.out.print("Invalid choice! Enter a number between 1 and " + sauces.length + ": ");
+            sauceChoice = sc.nextInt();
+        }
+        String sauce = sauces[sauceChoice - 1];
+
+        System.out.print("Topping [1.Veggies 2.Pepperoni 3.Chicken 4.Corn]: ");
+        int toppingChoice = sc.nextInt();
+        while (toppingChoice < 1 || toppingChoice > toppings.length) {
+            System.out.print("Invalid choice! Enter a number between 1 and " + toppings.length + ": ");
+            toppingChoice = sc.nextInt();
+        }
+        String topping = toppings[toppingChoice - 1];
+
+        System.out.print("Cheese [1.Mozzarella 2.Cheddar 3.Parmesan]: ");
+        int cheeseChoice = sc.nextInt();
+        while (cheeseChoice < 1 || cheeseChoice > cheeses.length) {
+            System.out.print("Invalid choice! Enter a number between 1 and " + cheeses.length + ": ");
+            cheeseChoice = sc.nextInt();
+        }
+        String cheese = cheeses[cheeseChoice - 1];
+
+        System.out.print("Crust [1.Thin 2.Thick 3.Stuffed]: ");
+        int crustChoice = sc.nextInt();
+        while (crustChoice < 1 || crustChoice > crusts.length) {
+            System.out.print("Invalid choice! Enter a number between 1 and " + crusts.length + ": ");
+            crustChoice = sc.nextInt();
+        }
+        String crust = crusts[crustChoice - 1];
+
+        System.out.print("Size [1.Small 2.Medium 3.Large]: ");
+        int sizeChoice = sc.nextInt();
+        while (sizeChoice < 1 || sizeChoice > sizes.length) {
+            System.out.print("Invalid choice! Enter a number between 1 and " + sizes.length + ": ");
+            sizeChoice = sc.nextInt();
+        }
+        String size = sizes[sizeChoice - 1];
 
         Pizza pizza = new PizzaBuilder()
                 .sauce(sauce)
@@ -55,7 +60,5 @@ public class Main {
 
         System.out.println("\nYour pizza is ready:");
         System.out.println(pizza);
-
-        sc.close();
     }
 }
