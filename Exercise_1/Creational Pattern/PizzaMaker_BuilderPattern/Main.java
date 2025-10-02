@@ -79,6 +79,5 @@ public class Main {
         System.out.println("\nYour pizza is ready: ");
         System.out.println(pizza);
 
-        sc.close();
     }
 }
