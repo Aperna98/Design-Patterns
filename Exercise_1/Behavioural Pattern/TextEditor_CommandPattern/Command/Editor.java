@@ -18,10 +18,6 @@ public class Editor {
         return out;
     }
 
-    public int length() {
-        return text.length();
-    }
-
     public void replace(int pos, int len, String s) {
         if (text.length() == 0 || pos < 0 || pos >= text.length())
             return;
