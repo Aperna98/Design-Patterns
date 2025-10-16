@@ -1,5 +1,3 @@
-# Educational-Initiatives-Project
-
 ## **Exercise 1**
 
 ### **Behavioral Patterns**
@@ -149,7 +147,7 @@ This Java project demonstrates a real-time chat system using **Observer, Singlet
 ## **How to Run**
 Clone this repository:
 
-git clone https://github.com/Aperna98/Educational-Initiatives-Project.git
+git clone https://github.com/Aperna98/Design-Patterns.git
 
 For each project, navigate to the respective folder using cd command and compile the files by using the following commands to execute the project.
 
